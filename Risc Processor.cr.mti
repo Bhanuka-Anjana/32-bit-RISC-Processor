@@ -1,0 +1,15 @@
+{E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v} {1 {vlog -work work -stats=none {E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory_tb
+
+Top level modules:
+	DataMemory_tb
+
+} {} {}} {E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v} {1 {vlog -work work -stats=none {E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}}

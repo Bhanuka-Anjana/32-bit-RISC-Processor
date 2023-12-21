@@ -1,0 +1,15 @@
+# Compile of DataMemory.v was successful.
+# Compile of DataMemory_tb.v was successful.
+vsim -gui work.DataMemory_tb
+# vsim -gui work.DataMemory_tb 
+# Start time: 11:47:01 on Dec 21,2023
+# Loading work.DataMemory_tb
+# Loading work.DataMemory
+add wave -position end  sim:/DataMemory_tb/address
+add wave -position end  sim:/DataMemory_tb/write_data
+add wave -position end  sim:/DataMemory_tb/mem_write
+add wave -position end  sim:/DataMemory_tb/mem_read
+add wave -position end  sim:/DataMemory_tb/read_data
+run -all
+# End time: 11:47:35 on Dec 21,2023, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 7

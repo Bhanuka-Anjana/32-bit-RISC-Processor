@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/campus/semester 5/ee5260 - HDL/coding/mips
+vDataMemory
+!s110 1703139404
+!i10b 1
+!s100 L]]dKla3W?9kneN5^SnYo3
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IeaN6G]bb@onb<<^Sj7D2i1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor
+w1703139402
+8E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v
+FE:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v
+!i122 0
+L0 1 18
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1703139404.000000
+!s107 E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@data@memory
+vDataMemory_tb
+!s110 1703139413
+!i10b 1
+!s100 @N3d9E7`RdfSMdC39lPZd2
+R0
+IT:BQW2b44ZAX<fK@K^ZJI2
+R1
+R2
+w1703139411
+8E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v
+FE:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v
+!i122 1
+L0 3 20
+R3
+r1
+!s85 0
+31
+!s108 1703139413.000000
+!s107 E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v|
+!i113 1
+R4
+R5
+n@data@memory_tb
