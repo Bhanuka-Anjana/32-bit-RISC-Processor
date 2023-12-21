@@ -1,0 +1,22 @@
+{C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v} {1 {vlog -work work -stats=none {C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} {C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v} {1 {vlog -work work -stats=none {C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMemory_tb
+
+Top level modules:
+	DataMemory_tb
+
+} {} {}} {C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v} {1 {vlog -work work -stats=none {C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registers_tb
+
+Top level modules:
+	registers_tb
+
+} {} {}}

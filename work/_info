@@ -8,52 +8,98 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dE:/campus/semester 5/ee5260 - HDL/coding/mips
+dD:/ProgramFiles/intelFPGA/20.1
 vDataMemory
-!s110 1703139404
+!s110 1703180198
 !i10b 1
 !s100 L]]dKla3W?9kneN5^SnYo3
 Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IeaN6G]bb@onb<<^Sj7D2i1
+IKSbJOFLI2M65Dz4=oW<nU1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dE:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor
-w1703139402
-8E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v
-FE:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v
+Z2 dC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor
+w1703180194
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v
 !i122 0
 L0 1 18
 Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1703139404.000000
-!s107 E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory.v|
+!s108 1703180198.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v|
 !i113 1
 Z4 o-work work
 Z5 tCvgOpt 0
 n@data@memory
 vDataMemory_tb
-!s110 1703139413
+!s110 1703180202
 !i10b 1
 !s100 @N3d9E7`RdfSMdC39lPZd2
 R0
-IT:BQW2b44ZAX<fK@K^ZJI2
+IdzQ8RZghdI0dVk4236YcO2
 R1
 R2
-w1703139411
-8E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v
-FE:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v
+w1703180172
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v
 !i122 1
 L0 3 20
 R3
 r1
 !s85 0
 31
-!s108 1703139413.000000
-!s107 E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|E:/campus/semester 5/ee5260 - HDL/coding/RiscProcessor/DataMemory_tb.v|
+!s108 1703180201.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v|
 !i113 1
 R4
 R5
 n@data@memory_tb
+vregisters
+!s110 1703181323
+!i10b 1
+!s100 P<EGAIlNzezniC5P2K>CL2
+R0
+IF:bZh@4ljj]:j7M:QSAXD0
+R1
+R2
+w1703181321
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v
+!i122 4
+L0 1 22
+R3
+r1
+!s85 0
+31
+!s108 1703181323.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v|
+!i113 1
+R4
+R5
+vregisters_tb
+!s110 1703181995
+!i10b 1
+!s100 De@?ga@U`1mhoA[6ZB1^o3
+R0
+I`P=8YFmjk@K>[W<hfMhdJ2
+R1
+R2
+w1703181973
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v
+!i122 11
+L0 3 47
+R3
+r1
+!s85 0
+31
+!s108 1703181995.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v|
+!i113 1
+R4
+R5
