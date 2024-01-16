@@ -1,4 +1,4 @@
-`timescale 1ms/1ms
+
 
 module registers_tb;
 
