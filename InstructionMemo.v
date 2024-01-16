@@ -6,7 +6,7 @@ module InstructionMemo(
 
     // Outputs
     output reg [31 : 0] Inst
-)
+);
 
     // Internal variables
     reg [31 : 0] Mem [0 : 1023];
