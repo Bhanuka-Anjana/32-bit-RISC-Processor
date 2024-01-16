@@ -1,12 +1,12 @@
 //ALU implimentation
 module ALU(
     // Inputs
-    input [31:0] A,B;
-    input [3:0] ALUControl;
+    input [31:0] A,B,
+    input [3:0] ALUControl,
 
     // Outputs
-    output reg [31:0] ALUOut;
-    output reg Zero; // Zero flag
+    output reg [31:0] ALUOut,
+    output reg Zero // Zero flag
 );
 
     always @* begin
@@ -21,3 +21,4 @@ module ALU(
         endcase
         Zero <= (ALUOut == 0);
     end
+endmodule
