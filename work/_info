@@ -9,48 +9,96 @@ z2
 !i10f 100
 cModel Technology
 dD:/ProgramFiles/intelFPGA/20.1
-vDataMemory
-!s110 1703180198
+vCU
+!s110 1703414455
 !i10b 1
-!s100 L]]dKla3W?9kneN5^SnYo3
+!s100 g]L8UW<QXUT?B[VRgRj7E2
 Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IKSbJOFLI2M65Dz4=oW<nU1
+IP?dgGaAP<dd@`3YTmb@bU1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor
-w1703180194
-8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v
-FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v
-!i122 0
-L0 1 18
+w1703414439
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU.v
+!i122 26
+L0 1 78
 Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1703180198.000000
-!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v|
+!s108 1703414455.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU.v|
 !i113 1
 Z4 o-work work
 Z5 tCvgOpt 0
-n@data@memory
-vDataMemory_tb
-!s110 1703180202
+n@c@u
+vCU_tb
+!s110 1703414572
 !i10b 1
-!s100 @N3d9E7`RdfSMdC39lPZd2
+!s100 _XUb>>j]LV?c:cJEQoPoW1
 R0
-IdzQ8RZghdI0dVk4236YcO2
+IRA^01e?8GLGHU8mY0WJUi0
 R1
 R2
-w1703180172
+w1703414570
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v
+!i122 29
+L0 2 84
+R3
+r1
+!s85 0
+31
+!s108 1703414572.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v|
+!i113 1
+R4
+R5
+n@c@u_tb
+vDataMemory
+!s110 1703410464
+!i10b 1
+!s100 M:<ZdRY5fnH3mS[ZbPRRO1
+R0
+I7eXQK@dWk7bn4:O@P2Hfj2
+R1
+R2
+w1703410446
+8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v
+FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v
+!i122 15
+L0 1 18
+R3
+r1
+!s85 0
+31
+!s108 1703410464.000000
+!s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory.v|
+!i113 1
+R4
+R5
+n@data@memory
+vDataMemory_tb
+!s110 1703413247
+!i10b 1
+!s100 [bHeoWaDlASi4Yg;Zg58T2
+R0
+I0H1IWK]cCzQ`aS;nCG]m41
+R1
+R2
+w1703410494
 8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v
 FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v
-!i122 1
+!i122 18
 L0 3 20
 R3
 r1
 !s85 0
 31
-!s108 1703180201.000000
+!s108 1703413247.000000
 !s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/DataMemory_tb.v|
 !i113 1
@@ -58,30 +106,30 @@ R4
 R5
 n@data@memory_tb
 vregisters
-!s110 1703181323
+!s110 1703414440
 !i10b 1
 !s100 P<EGAIlNzezniC5P2K>CL2
 R0
 IF:bZh@4ljj]:j7M:QSAXD0
 R1
 R2
-w1703181321
+w1703409823
 8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v
 FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v
-!i122 4
+!i122 24
 L0 1 22
 R3
 r1
 !s85 0
 31
-!s108 1703181323.000000
+!s108 1703414440.000000
 !s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers.v|
 !i113 1
 R4
 R5
 vregisters_tb
-!s110 1703181995
+!s110 1703410470
 !i10b 1
 !s100 De@?ga@U`1mhoA[6ZB1^o3
 R0
@@ -91,13 +139,13 @@ R2
 w1703181973
 8C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v
 FC:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v
-!i122 11
+!i122 16
 L0 3 47
 R3
 r1
 !s85 0
 31
-!s108 1703181995.000000
+!s108 1703410470.000000
 !s107 C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v|
 !i113 1
