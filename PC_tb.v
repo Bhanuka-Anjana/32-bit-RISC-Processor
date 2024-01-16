@@ -14,10 +14,10 @@ module PC_tb;
 
     // instantiate the program counter module   
     PC dut (
-        .clk(clk),
-        .rst(rst),
-        .pc_in(pc_in),
-        .pc_out(pc_out)
+        .Clk(clk),
+        .Rst(rst),
+        .Pc_in(pc_in),
+        .Pc_out(pc_out)
     );
 
 //generate clk

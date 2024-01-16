@@ -1,17 +1,17 @@
 //program counter
 module PC (
-    input clk,
-    input rst,
-    input [31:0] pc_in,
-    output reg [31:0] pc_out
+    input Clk,
+    input Rst,
+    input [31:0] Pc_in,
+    output reg [31:0] Pc_out
     );
     
-    always @(posedge clk )
+    always @(posedge Clk )
     begin
-        if(rst)
-            pc_out <= 0;
+        if(Rst)
+            Pc_out <= 0;
         else
-            pc_out <= pc_in;
+            Pc_out <= Pc_in;
     end
     
 endmodule
