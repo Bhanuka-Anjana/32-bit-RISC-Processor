@@ -1,11 +1,39 @@
-# Error opening C:/Users/GF63 10SCSR/Desktop/tb_mux2X1.v
-# Path name 'C:/Users/GF63 10SCSR/Desktop/tb_mux2X1.v' doesn't exist.
-# Compile of registers_tb.v was successful.
 # Compile of registers.v was successful.
+# Compile of registers.v failed with 2 errors.
+# Compile of registers.v was successful.
+# Compile of registers_tb.v was successful.
+# Compile of registers_tb.v was successful.
+vsim -gui work.DataMemory_tb
+# vsim -gui work.DataMemory_tb 
+# Start time: 23:29:46 on Dec 21,2023
+# Loading work.DataMemory_tb
+# Loading work.DataMemory
+add wave -position end  sim:/DataMemory_tb/address
+add wave -position end  sim:/DataMemory_tb/write_data
+add wave -position end  sim:/DataMemory_tb/mem_write
+add wave -position end  sim:/DataMemory_tb/mem_read
+add wave -position end  sim:/DataMemory_tb/read_data
+run -all
+# Break key hit
+run -all
+vsim -gui work.registers_tb
+# End time: 23:31:24 on Dec 21,2023, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 7
+# vsim -gui work.registers_tb 
+# Start time: 23:31:24 on Dec 21,2023
+# Loading work.registers_tb
+# Loading work.registers
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Read_Data_1'.
+#    Time: 0 ps  Iteration: 0  Instance: /registers_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v Line: 9
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Read_Data_2'.
+#    Time: 0 ps  Iteration: 0  Instance: /registers_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/registers_tb.v Line: 9
+# Error loading design
+# End time: 23:31:25 on Dec 21,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 1
 # Compile of registers_tb.v was successful.
 vsim -gui work.registers_tb
 # vsim -gui work.registers_tb 
-# Start time: 14:54:07 on Dec 24,2023
+# Start time: 23:34:17 on Dec 21,2023
 # Loading work.registers_tb
 # Loading work.registers
 add wave -position end  sim:/registers_tb/read_register_1
@@ -15,221 +43,32 @@ add wave -position end  sim:/registers_tb/write_data
 add wave -position end  sim:/registers_tb/sig_reg_write
 add wave -position end  sim:/registers_tb/read_data_1
 add wave -position end  sim:/registers_tb/read_data_2
-run
-# Break key hit
-# Compile of DataMemory_tb.v failed with 2 errors.
-# Compile of DataMemory.v was successful.
+run -all
 # Compile of registers_tb.v was successful.
-# Compile of DataMemory_tb.v failed with 2 errors.
-# Compile of DataMemory_tb.v was successful.
-run
-vsim -gui work.DataMemory
-# End time: 15:05:09 on Dec 24,2023, Elapsed time: 0:11:02
-# Errors: 0, Warnings: 14
-# vsim -gui work.DataMemory 
-# Start time: 15:05:09 on Dec 24,2023
-# Loading work.DataMemory
-run
-add wave -position end  sim:/DataMemory/Address
-add wave -position end  sim:/DataMemory/Write_Data
-add wave -position end  sim:/DataMemory/Sig_Mem_Write
-add wave -position end  sim:/DataMemory/Sig_Mem_Read
-add wave -position end  sim:/DataMemory/Read_Data
-add wave -position end  sim:/DataMemory/MemReg
-run
-vsim -gui work.DataMemory_tb
-# End time: 15:06:12 on Dec 24,2023, Elapsed time: 0:01:03
+# Compile of registers_tb.v was successful.
+# Compile of registers_tb.v was successful.
+vsim -gui work.registers_tb
+# End time: 23:36:28 on Dec 21,2023, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 5
+# vsim -gui work.registers_tb 
+# Start time: 23:36:28 on Dec 21,2023
+# Loading work.registers_tb
+# Loading work.registers
+# Compile of registers_tb.v was successful.
+vsim -gui work.registers_tb
+# End time: 23:36:42 on Dec 21,2023, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 2
+# vsim -gui work.registers_tb 
+# Start time: 23:36:42 on Dec 21,2023
+# Loading work.registers_tb
+# Loading work.registers
+add wave -position end  sim:/registers_tb/read_register_1
+add wave -position end  sim:/registers_tb/read_register_2
+add wave -position end  sim:/registers_tb/write_register
+add wave -position end  sim:/registers_tb/write_data
+add wave -position end  sim:/registers_tb/sig_reg_write
+add wave -position end  sim:/registers_tb/read_data_1
+add wave -position end  sim:/registers_tb/read_data_2
+run -all
+# End time: 23:38:41 on Dec 21,2023, Elapsed time: 0:01:59
 # Errors: 0, Warnings: 1
-# vsim -gui work.DataMemory_tb 
-# Start time: 15:06:12 on Dec 24,2023
-# Loading work.DataMemory_tb
-# Loading work.DataMemory
-add wave -position end  sim:/DataMemory_tb/address
-add wave -position end  sim:/DataMemory_tb/write_data
-add wave -position end  sim:/DataMemory_tb/sig_mem_write
-add wave -position end  sim:/DataMemory_tb/sig_mem_read
-add wave -position end  sim:/DataMemory_tb/read_data
-run
-# Compile of DataMemory_tb.v was successful.
-# Compile of CU.v failed with 11 errors.
-# Compile of CU.v failed with 2 errors.
-# Compile of CU.v failed with 2 errors.
-# Compile of CU.v failed with 10 errors.
-# Compile of CU.v was successful.
-# Compile of CU.v was successful.
-# Compile of CU_tb.v was successful.
-vsim -gui work.CU_tb
-# End time: 16:05:30 on Dec 24,2023, Elapsed time: 0:59:18
-# Errors: 0, Warnings: 10
-# vsim -gui work.CU_tb 
-# Start time: 16:05:30 on Dec 24,2023
-# Loading work.CU_tb
-# Loading work.CU
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'RegDest'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Jump'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Branch'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_Read'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_to_Reg'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_Write'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ALUSrc'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Reg_Write'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ALUOp'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# Error loading design
-# End time: 16:05:30 on Dec 24,2023, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 1
-# Compile of registers.v was successful.
-vsim -gui work.CU_tb
-# vsim -gui work.CU_tb 
-# Start time: 16:09:37 on Dec 24,2023
-# Loading work.CU_tb
-# Loading work.CU
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'RegDest'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Jump'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Branch'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_Read'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_to_Reg'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_Write'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ALUSrc'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Reg_Write'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ALUOp'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# Error loading design
-# End time: 16:09:37 on Dec 24,2023, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 2
-# Compile of registers.v was successful.
-vsim -gui work.CU_tb
-# vsim -gui work.CU_tb 
-# Start time: 16:10:15 on Dec 24,2023
-# Loading work.CU_tb
-# Loading work.CU
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'RegDest'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Jump'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Branch'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_Read'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_to_Reg'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Mem_Write'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ALUSrc'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'Sig_Reg_Write'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ALUOp'.
-#    Time: 0 ps  Iteration: 0  Instance: /CU_tb/dut File: C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v Line: 8
-# Error loading design
-# End time: 16:10:16 on Dec 24,2023, Elapsed time: 0:00:01
-# Errors: 9, Warnings: 2
-# Compile of registers.v was successful.
-# Compile of CU.v was successful.
-# Compile of CU.v was successful.
-# Compile of CU_tb.v was successful.
-vsim -gui work.CU_tb
-# vsim -gui work.CU_tb 
-# Start time: 16:11:04 on Dec 24,2023
-# Loading work.CU_tb
-# Loading work.CU
-add wave -position end  sim:/CU_tb/opcode
-add wave -position end  sim:/CU_tb/regDest
-add wave -position end  sim:/CU_tb/jump
-add wave -position end  sim:/CU_tb/branch
-add wave -position end  sim:/CU_tb/sig_Mem_Read
-add wave -position end  sim:/CU_tb/sig_Mem_to_Reg
-add wave -position end  sim:/CU_tb/sig_Mem_Write
-add wave -position end  sim:/CU_tb/aluSrc
-add wave -position end  sim:/CU_tb/sig_Reg_Write
-add wave -position end  sim:/CU_tb/aluOp
-run
-# Test Case 1: add - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=2
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=4
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=3
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=1, Sig_Mem_to_Reg=1, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=1, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=1, Jump=1, Branch=1, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# ** Note: $stop    : C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v(82)
-#    Time: 100 ps  Iteration: 0  Instance: /CU_tb
-# Break in Module CU_tb at C:/Users/GF63 10SCSR/Desktop/rics Processor/32-bit-RISC-Processor/CU_tb.v line 82
-# Compile of CU_tb.v was successful.
-vsim -gui work.CU_tb
-# End time: 16:12:06 on Dec 24,2023, Elapsed time: 0:01:02
-# Errors: 0, Warnings: 6
-# vsim -gui work.CU_tb 
-# Start time: 16:12:06 on Dec 24,2023
-# Loading work.CU_tb
-# Loading work.CU
-add wave -position end  sim:/CU_tb/opcode
-add wave -position end  sim:/CU_tb/regDest
-add wave -position end  sim:/CU_tb/jump
-add wave -position end  sim:/CU_tb/branch
-add wave -position end  sim:/CU_tb/sig_Mem_Read
-add wave -position end  sim:/CU_tb/sig_Mem_to_Reg
-add wave -position end  sim:/CU_tb/sig_Mem_Write
-add wave -position end  sim:/CU_tb/aluSrc
-add wave -position end  sim:/CU_tb/sig_Reg_Write
-add wave -position end  sim:/CU_tb/aluOp
-run
-# Test Case 1: add - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=2
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=4
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=3
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=1, Sig_Mem_to_Reg=1, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=1, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=1, Jump=1, Branch=1, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Compile of CU_tb.v was successful.
-vsim -gui work.CU_tb
-# End time: 16:12:59 on Dec 24,2023, Elapsed time: 0:00:53
-# Errors: 0, Warnings: 2
-# vsim -gui work.CU_tb 
-# Start time: 16:12:59 on Dec 24,2023
-# Loading work.CU_tb
-# Loading work.CU
-add wave -position end  sim:/CU_tb/opcode
-add wave -position end  sim:/CU_tb/regDest
-add wave -position end  sim:/CU_tb/jump
-add wave -position end  sim:/CU_tb/branch
-add wave -position end  sim:/CU_tb/sig_Mem_Read
-add wave -position end  sim:/CU_tb/sig_Mem_to_Reg
-add wave -position end  sim:/CU_tb/sig_Mem_Write
-add wave -position end  sim:/CU_tb/aluSrc
-add wave -position end  sim:/CU_tb/sig_Reg_Write
-add wave -position end  sim:/CU_tb/aluOp
-run
-# Test Case 1: add - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=2
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=4
-# Test Case 2: ld - RegDest=0, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=3
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=x, Sig_Mem_to_Reg=0, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=1, Sig_Mem_to_Reg=1, Sig_Mem_Write=x, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=x, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# Test Case 2: ld - RegDest=1, Jump=x, Branch=1, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=1
-# Test Case 2: ld - RegDest=1, Jump=1, Branch=1, Sig_Mem_Read=1, Sig_Mem_to_Reg=0, Sig_Mem_Write=1, ALUSrc=x, Sig_Reg_Write=1, ALUOp=0
-# End time: 16:13:54 on Dec 24,2023, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 2
