@@ -17,7 +17,6 @@ module ALU(
             4'b0011: ALUOut <= A | B; // or
             4'b0100: ALUOut <= ~(A | B); // not
             4'b1000: ALUOut <= A < B; // slt
-            4'b1001: ALUOut <= A < B; // sltu
             default: ALUOut <= 0;
         endcase
         Zero <= (ALUOut == 0);
