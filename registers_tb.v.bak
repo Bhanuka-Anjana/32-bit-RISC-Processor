@@ -1,5 +1,3 @@
-`timescale 1ms/1ms
-
 module registers_tb;
 
   reg [4:0] read_register_1, read_register_2, write_register;
