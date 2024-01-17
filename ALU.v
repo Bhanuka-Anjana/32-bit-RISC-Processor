@@ -2,7 +2,7 @@
 module ALU(
     // Inputs
     input [31:0] A,B,
-    input [3:0] ALUControl,
+    input [2:0] ALUControl,
 
     // Outputs
     output reg [31:0] ALUOut,
@@ -11,12 +11,12 @@ module ALU(
 
     always @* begin
         case(ALUControl)
-            4'b0000: ALUOut <= A + B; // add
-            4'b0001: ALUOut <= A - B; // sub
-            4'b0010: ALUOut <= A & B; // and
-            4'b0011: ALUOut <= A | B; // or
-            4'b0100: ALUOut <= ~(A | B); // not
-            4'b1000: ALUOut <= A < B; // slt
+            3'b001: ALUOut <= A - B; // sub
+            3'b000: ALUOut <= A + B; // add
+            3'b010: ALUOut <= A & B; // and
+            3'b100: ALUOut <= A | B; // or
+            3'b011: ALUOut <= ~(A | B); // not
+            //3'b1000: ALUOut <= A < B; // slt
             default: ALUOut <= 0;
         endcase
         Zero <= (ALUOut == 0);
