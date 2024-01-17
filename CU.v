@@ -1,17 +1,22 @@
 module CU(
   input [3:0] Opcode,
-  output reg RegDest, Jump, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
-             Sig_Mem_Write, ALUSrc, Sig_Reg_Write,
+  output reg RegDest, 
+  Branch, 
+  Sig_Mem_Read, 
+  Sig_Mem_to_Reg,
+  Sig_Mem_Write, 
+  ALUSrc, 
+  Sig_Reg_Write,
+
   output reg [2:0] ALUOp
 );
-  reg [2:0] ALUOpMem_to_Reg;
+  //reg [2:0] ALUOpMem_to_Reg;
 
   always @* begin
     if (Opcode == 4'b0010)  // add
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -23,7 +28,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -35,7 +39,6 @@ module CU(
     begin
       RegDest = 1'b1;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b1;
       Sig_Mem_to_Reg = 1'b1;
       Sig_Mem_Write = 1'b1;
@@ -47,7 +50,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -59,7 +61,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -71,7 +72,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -83,7 +83,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -95,7 +94,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -107,7 +105,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
@@ -119,7 +116,6 @@ module CU(
     begin
       RegDest = 1'b0;
       Branch = 1'b0;
-      Jump = 1'b0;
       Sig_Mem_Read = 1'b0;
       Sig_Mem_to_Reg = 1'b0;
       Sig_Mem_Write = 1'b0;
