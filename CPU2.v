@@ -4,6 +4,9 @@ module CPU2(
     input Rst,
 
     //Outputs
+    output wire RegDest, Jump, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
+               Sig_Mem_Write, ALUSrc, Sig_Reg_Write,
+    output wire [2:0] ALUOp,
     output wire [31:0] Pc_in ,Pc_out, Adder1_out, InstMem_out
     );
 
@@ -36,6 +39,23 @@ module CPU2(
 
         //Outputs
         .Inst(InstMem_out)
+    );
+
+//connect with control unit
+    CU cu(
+        //Inputs
+        .Opcode(InstMem_out[31:28]),
+
+        //Outputs
+        .RegDest(RegDest),
+        .Jump(Jump),
+        .Branch(Branch),
+        .Sig_Mem_Read(Sig_Mem_Read),
+        .Sig_Mem_to_Reg(Sig_Mem_to_Reg),
+        .Sig_Mem_Write(Sig_Mem_Write),
+        .ALUSrc(ALUSrc),
+        .Sig_Reg_Write(Sig_Reg_Write),
+        .ALUOp(ALUOp)
     );
 
 endmodule
