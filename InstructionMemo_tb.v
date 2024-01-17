@@ -10,8 +10,8 @@ module InstructionMemo_tb;
 
     // Instantiate the instrucqtion memory module
     InstructionMemo uut (
-        .CLK(clk), 
-        .ADDRESS(address), 
+        .Clk(clk), 
+        .Address(address), 
         .Inst(inst)
     );
 

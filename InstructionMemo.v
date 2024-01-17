@@ -1,8 +1,8 @@
 //Instruction memory module for the processor
 module InstructionMemo(
     // Inputs
-    input CLK,
-    input [31:0] ADDRESS,
+    input Clk,
+    input [31:0] Address,
 
     // Outputs
     output reg [31 : 0] Inst
@@ -26,7 +26,7 @@ module InstructionMemo(
     end
     
     // Read instruction from memory
-    always @(posedge CLK) begin
-        Inst <= Mem[ADDRESS];
+    always @(posedge Clk) begin
+        Inst <= Mem[Address];
     end
 endmodule
