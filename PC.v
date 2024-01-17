@@ -10,7 +10,7 @@ module PC (
         if(Rst == 1)
             Pc_out <= 0;
         else
-            Pc_out <= Pc_in + 4;
+            Pc_out <= Pc_in;
     end
     
 endmodule
