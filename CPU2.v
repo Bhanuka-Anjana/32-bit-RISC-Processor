@@ -4,13 +4,14 @@ module CPU2(
     input Rst,
 
     //Outputs
-    output wire RegDest, Jump, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
-               Sig_Mem_Write, ALUSrc, Sig_Reg_Write, Branch_and_ZeroFlag,
+    output wire RegDest, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
+               Sig_Mem_Write, ALUSrc, Sig_Reg_Write, Branch_and_ZeroFlag, 
+                ZeroFlag,
     output wire [2:0] ALUOp,
     output wire [31:0] Pc_in ,Pc_out, Adder1_out, InstMem_out, 
                 Register_1_out, Register_2_out, Mux_out_to_register_data,
                 Adder_out_to_mux, Mux_out_to_register_alu,
-                ALUOut, ZeroFlag, DataMemory_out 
+                ALUOut, DataMemory_out 
     );
 
 //Connections for program counter
@@ -51,7 +52,6 @@ module CPU2(
 
         //Outputs
         .RegDest(RegDest),
-        .Jump(Jump),
         .Branch(Branch),
         .Sig_Mem_Read(Sig_Mem_Read),
         .Sig_Mem_to_Reg(Sig_Mem_to_Reg),

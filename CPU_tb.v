@@ -6,12 +6,13 @@ module CPU_tb;
 reg clk;
 reg reset;
 
-wire RegDest, Jump, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
-     Sig_Mem_Write, ALUSrc, Sig_Reg_Write, Branch_and_ZeroFlag;
+wire RegDest,  Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
+     Sig_Mem_Write, ALUSrc, Sig_Reg_Write, Branch_and_ZeroFlag,
+     ZeroFlag;
 wire [2:0] ALUOp;
 wire [31:0] pc_in ,pc_out,adder1_out,instMem_out, 
             adder_out, Register_1_out, Register_2_out, Mux_out_to_register_data,
-            Adder_out_to_mux, Mux_out_to_register_alu, ALUOut, ZeroFlag, DataMemory_out;
+            Adder_out_to_mux, Mux_out_to_register_alu, ALUOut, DataMemory_out;
 
 //Initiate CPU
 CPU2 cpu(
@@ -25,7 +26,6 @@ CPU2 cpu(
     .Adder1_out(adder1_out),
     .InstMem_out(instMem_out),
     .RegDest(RegDest),
-    .Jump(Jump),
     .Branch(Branch),
     .Sig_Mem_Read(Sig_Mem_Read),
     .Sig_Mem_to_Reg(Sig_Mem_to_Reg),
