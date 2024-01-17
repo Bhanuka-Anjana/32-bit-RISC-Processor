@@ -7,7 +7,9 @@ module CPU2(
     output wire RegDest, Jump, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
                Sig_Mem_Write, ALUSrc, Sig_Reg_Write,
     output wire [2:0] ALUOp,
-    output wire [31:0] Pc_in ,Pc_out, Adder1_out, InstMem_out
+    output wire [31:0] Pc_in ,Pc_out, Adder1_out, InstMem_out, 
+                Register_1_out, Register_2_out, Mux_out_to_register_data,
+                Adder_out_to_mux
     );
 
 //Connections for program counter
@@ -58,4 +60,38 @@ module CPU2(
         .ALUOp(ALUOp)
     );
 
+//connect with register file
+registers regs(
+    //Inputs
+    .Read_Register_1(InstMem_out[27:23]),
+    .Read_Register_2(InstMem_out[22:18]),
+    .Write_Register(InstMem_out[17:13]),
+    .Write_Data(Mux_out_to_register_data),
+    .Sig_Reg_Write(Sig_Reg_Write),
+
+    //Outputs
+    .Read_Data_1(Register_1_out),
+    .Read_Data_2(Register_2_out)
+);
+
+//connect with jump adder
+Adder adder2(
+    //Inputs
+    .a(Adder1_out),
+    .b(InstMem_out),
+
+    //Outputs
+    .sum(Adder_out_to_mux)
+);
+
+//connect with pc input mux
+mux_2X1 mux1(
+    //Inputs
+    .select(1),
+    .a(Adder_out_to_mux),
+    .b(Adder1_out),
+
+    //Outputs
+    .q(Pc_in)
+);
 endmodule
