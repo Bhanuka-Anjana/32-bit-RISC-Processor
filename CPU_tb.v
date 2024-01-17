@@ -7,11 +7,11 @@ reg clk;
 reg reset;
 
 wire RegDest, Jump, Branch, Sig_Mem_Read, Sig_Mem_to_Reg,
-     Sig_Mem_Write, ALUSrc, Sig_Reg_Write;
+     Sig_Mem_Write, ALUSrc, Sig_Reg_Write, Branch_and_ZeroFlag;
 wire [2:0] ALUOp;
 wire [31:0] pc_in ,pc_out,adder1_out,instMem_out, 
             adder_out, Register_1_out, Register_2_out, Mux_out_to_register_data,
-            Adder_out_to_mux;
+            Adder_out_to_mux, Mux_out_to_register_alu, ALUOut, ZeroFlag, DataMemory_out;
 
 //Initiate CPU
 CPU2 cpu(
@@ -36,7 +36,12 @@ CPU2 cpu(
     .Adder_out_to_mux(Adder_out_to_mux),
     .Mux_out_to_register_data(Mux_out_to_register_data),
     .Register_1_out(Register_1_out),
-    .Register_2_out(Register_2_out)
+    .Register_2_out(Register_2_out),
+    .Mux_out_to_register_alu(Mux_out_to_register_alu),
+    .ALUOut(ALUOut),
+    .ZeroFlag(ZeroFlag),
+    .DataMemory_out(DataMemory_out),
+    .Branch_and_ZeroFlag(Branch_and_ZeroFlag)
 );
 
 //Generate clock signal
