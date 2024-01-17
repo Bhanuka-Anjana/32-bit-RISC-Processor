@@ -31,6 +31,8 @@ end
 initial begin
     
     // Initialize Inputs
+    rst = 1;
+    #10;
     rst = 0;
     pc_in = 0;
     
@@ -51,9 +53,7 @@ initial begin
     pc_in = 32'b00000010;
     #10;
 
-    // Test case 4: reset
-    rst = 1;
-    #10;
+    
 
 end
 endmodule
