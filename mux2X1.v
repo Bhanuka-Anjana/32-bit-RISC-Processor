@@ -1,15 +1,15 @@
 
-module mux_2X1 (
-    input wire select,
-    input wire [31:0] a,
-    input wire [31:0] b,
-    output reg [31:0] q
+module Mux_2X1 (
+    input Select,
+    input wire [31:0] A, B,
+
+    output reg [31:0] Q
 );
 
-    always @*
-        if (select == 0)
-            q = a;
-        else
-            q = b;
-
+always @(Select or A or B) begin
+    if (Select == 0)
+        Q <= A;
+    else
+        Q <= B;
+    end
 endmodule

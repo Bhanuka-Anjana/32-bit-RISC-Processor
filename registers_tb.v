@@ -1,17 +1,14 @@
+module Registers_tb;
 
-
-module registers_tb;
-
-  reg [4:0] read_register_1, read_register_2, write_register;
+  reg [4:0] read_register_1, read_register_2,
   reg [31:0] write_data;
   reg sig_reg_write;
   wire [31:0] read_data_1, read_data_2;
 
   // Instantiate the registers module
-  registers dut (
+  Registers dut (
     .Read_Register_1(read_register_1),
     .Read_Register_2(read_register_2),
-    .Write_Register(write_register),
     .Write_Data(write_data),
     .Sig_Reg_Write(sig_reg_write),
     .Read_Data_1(read_data_1),
@@ -21,7 +18,7 @@ module registers_tb;
   // Initial block to apply stimuli
   initial begin
     // Write to register 3
-    write_register = 3;
+    Read_Register_1 = 3;
     write_data = 20;
     sig_reg_write = 1;
     #10;
@@ -33,7 +30,7 @@ module registers_tb;
     #10;
 
     // Write to register 0
-    write_register = 0;
+    Read_Register_1 = 0;
     write_data = 10;
     sig_reg_write = 1;
     #10;

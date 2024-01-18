@@ -1,11 +1,14 @@
 module Adder (
-    input [31:0] a,
-    input [31:0] b,
-    output reg [31:0] sum
+    //Inputs
+    input [31:0] A,
+    input [31:0] B,
+
+    //Outputs
+    output reg [31:0] Sum
 );
 
-    always @*
-        sum = a + b;
-
+always @(A,B) begin
+    Sum <= A + B;
+end
 endmodule
 
