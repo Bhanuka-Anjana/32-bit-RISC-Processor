@@ -30,7 +30,7 @@ module Registers_tb;
     #10;
 
     // Write to register 0
-    read_register_1 = 0;
+    Read_Register_1 = 0;
     write_data = 10;
     sig_reg_write = 1;
     #10;
